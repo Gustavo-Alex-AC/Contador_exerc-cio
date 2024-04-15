@@ -21,13 +21,13 @@ buttonElements.forEach((el) => {
     } else if (clicked === btnMultiply) {
       btnDisplay.innerText = num * 2;
     } else if (clicked === btnDivide) {
-      num === 1
-        ? (btnDisplay.innerText = 2 / 2)
-        : (btnDisplay.innerText = num / 2);
-
-      num === -1
-        ? (btnDisplay.innerText = -2 / 2)
-        : (btnDisplay.innerText = num / 2);
+      if (num === 1) {
+        btnDisplay.innerText = 2 / 2;
+      } else if (num == -1) {
+        btnDisplay.innerText = -2 / 2;
+      } else {
+        btnDisplay.innerText = num / 2;
+      }
     }
   });
 });

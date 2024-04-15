@@ -3,8 +3,12 @@ const btnAdd = document.querySelector(".btn-add--add");
 const btnSubtract = document.querySelector(".btn-add--subtract");
 const btnDivide = document.querySelector(".btn-add--divide");
 const btnMultiply = document.querySelector(".btn-add--multiply");
-
+const btnReset = document.querySelector(".icon-reset");
 const buttonElements = document.querySelectorAll(".btn");
+
+btnReset.addEventListener("click", function () {
+  btnDisplay.innerText = 1;
+});
 
 buttonElements.forEach((el) => {
   el.addEventListener("click", function (e) {

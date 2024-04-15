@@ -34,7 +34,7 @@ body {
 .btn {
   background-color: #f0f0f0;
   border: none;
-  box-shadow: 2px 2px rgb(194, 194, 194);
+  box-shadow: 2px 2px 2px rgb(194, 194, 194);
   font-weight: bold;
 }
 
@@ -57,7 +57,18 @@ body {
 .operator {
   width: 8rem;
   height: 3rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
   border-radius: 11px;
+}
+
+.operator:hover {
+  background-color: #000;
+  color: #f0f0f0;
+  box-shadow: 2px 2px 2px 2px rgb(194, 194, 194);
+}
+
+.icon-reset {
+  font-size: 4rem;
+  cursor: pointer;
 }

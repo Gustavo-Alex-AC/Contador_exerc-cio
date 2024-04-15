@@ -13,11 +13,17 @@ buttonElements.forEach((el) => {
     let num = parseInt(btnDisplay.innerText);
 
     if (clicked === btnAdd) {
-      num === -1
-        ? (btnDisplay.innerText = num + 2)
-        : (btnDisplay.innerText = num + 1);
+      if (num === -1) {
+        btnDisplay.innerText = num + 2;
+      } else {
+        btnDisplay.innerText = num + 1;
+      }
     } else if (clicked === btnSubtract) {
-      btnDisplay.innerText = num - 2;
+      if (num === 2) {
+        btnDisplay.innerText = num - 1;
+      } else {
+        btnDisplay.innerText = num - 2;
+      }
     } else if (clicked === btnMultiply) {
       btnDisplay.innerText = num * 2;
     } else if (clicked === btnDivide) {
